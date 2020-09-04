@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:weightSum="10">
+
+    <ImageView
+        android:layout_width="225dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_weight="2.2"
+        android:src="@drawable/pixiedusthrlogo" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/username_text_input_layout"
+        android:layout_width="330dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColorHint="#000"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/loginemail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="sans-serif"
+            android:backgroundTint="#000"
+            android:hint="Email"
+            android:textColor="#000"
+            android:theme="@style/MyEditText"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/password_text_input_layout"
+        android:layout_width="330dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColorHint="#000"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/loginpassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="sans-serif"
+            android:hint="Password"
+            android:backgroundTint="#000"
+            android:password="true"
+            android:textColor="#000"
+            android:theme="@style/MyEditText"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2" />
+
+    <TextView
+        android:id="@+id/txtinvalidUser"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_weight="0.5"
+        android:fontFamily="sans-serif"
+        android:text="Invalid Username or Password"
+        android:textColor="#f21818"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_weight="1"
+        android:background="@color/quortise"
+        android:hint="Login"
+        style="@style/Regular"
+        android:onClick="Login"
+        android:textColorHint="#000"
+   />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:textSize="16sp"
+        android:text="Require assistance?"
+        style="@style/Regular" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:layout_weight="0.5"
+        android:text="+44 (0)116 283 2555"
+        style="@style/Regular" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.5"
+        android:paddingLeft="20dp"
+        android:textSize="16sp"
+        android:text="E-Mail:info@pixiedustmerchandising.co.uk"
+        style="@style/Regular"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="2"
+        android:paddingLeft="20dp"
+        android:textSize="16sp"
+        android:text="Unauthorised access to this application is not permitted and criminal proceedings may be actioned against anyone without authorisation who access’s the software and / or data within."
+        style="@style/Regular"/>
+</LinearLayout>
